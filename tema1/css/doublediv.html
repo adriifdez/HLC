@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Div</title>
+    <style>
+        /* reglas de estilo internal */
+        .fondodiv {
+            background-color: blueviolet;
+            width: 33%;
+            float: left;
+        }
+
+        .contenedorexterno {
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: burlywood;
+            clear: both;
+            display: table;
+        }
+        #derecha {
+            background-color: aqua;
+            width: 33%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Capa externa-->
+    <div class="contenedorexterno">
+        <!--Estilo inline para cambiar el ancho del div-->
+        <div style="width: 33%; background-color: aquamarine; float: left;">
+            <div>
+                Texto en el interior de dos Div
+            </div>
+        </div>
+        <div class="fondodiv">
+            Texto en el interior de un Div
+        </div>
+        <div id="derecha">
+            Texto en la capa derecha
+        </div>
+    </div>
+</body>
+
+</html>
