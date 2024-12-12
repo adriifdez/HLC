@@ -1,0 +1,80 @@
+div {
+  /*Borde a la áreas principales*/
+  border-style: solid;
+  border-width: 1px;
+  border-color: green;
+}
+
+#contenedor {
+  /*#contenedor: ancho 900 px, margen auto*/
+    width: 900px;
+    margin: auto;
+  }
+
+  #cabecera {
+    /*#cabecera: ancho 100 %. flotante derecha. borde 2px verde, relleno 0.5 em*/
+    width: 100%;
+    float: right;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    padding: 0.5em;
+  }
+
+  #identificacion {
+    /*#identificacion: ancho 300 px alto 100 px flotante izquierda */
+    width: 300px;
+    height: 100px;
+    float: left;
+  }
+
+  #busqueda {
+    /*#busqueda: flotante derecha, ancho 250 px alto 100 px*/
+    float: right;
+    width: 250px;
+    height: 100px;
+  }
+
+  #menu {
+    /*#menu: ancho 100% flotante derecha. alto 30 px; borde 2p blanco*/
+    width: 100%;
+    float: right;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+  }
+
+  #pie {
+    /*#pie: ancho 100%, clear: both*/
+    width: 100%;
+    clear: both;
+  }
+
+  #identificador {
+    /*#identificador: flotante izquierda, ancho 300px, alto 100px;*/
+    float: left;
+    width: 300px;
+    height: 100px;
+  }
+
+  #lateralizquierdo {
+    /*#lateralizquierdo: flotante izquierda, ancho 245 px, margen derecho 5 px*/
+    float: left;
+    width: 245px;
+    margin-right: 5px;
+  }
+
+  #principal {
+    /*#principal: flotante izquierda, ancho 400 px, clear ninguno */
+    float: left;
+    width: 400px;
+    clear: both;
+  }
+
+  #lateralderecho {
+    /*#lateralderecho { flotante derecha, ancho 245 px, margen izquierda 5px*/
+    float: right;
+    width: 245px;
+    margin-left: 5px;
+  }
