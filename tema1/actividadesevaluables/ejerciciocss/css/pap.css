@@ -1,3 +1,8 @@
+body {
+  background-repeat: repeat-x;
+  background-color: #f2f5fe;
+}
+
 div {
   /*Borde a la áreas principales*/
   border-style: solid;
@@ -15,10 +20,9 @@ div {
     /*#cabecera: ancho 100 %. flotante derecha. borde 2px verde, relleno 0.5 em*/
     width: 100%;
     float: right;
-    border-style: solid;
-    border-width: 2px;
-    border-color: green;
     padding: 0.5em;
+    background-image: url(../imagenes/cabecera.png);
+    color: white;
   }
 
   #identificacion {
@@ -33,6 +37,7 @@ div {
     float: right;
     width: 250px;
     height: 100px;
+    padding-top: 5px;
   }
 
   #menu {
@@ -45,10 +50,43 @@ div {
     border-color: white;
   }
 
+  #menu ul{
+    list-style: none;
+    margin: auto;
+    display: block;
+  }
+
+  #menu ul li {
+    display: inline;
+    float: left;
+    height: 25px;
+    width: 120px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+
+  #menu ul li {
+    text-decoration: none;
+    padding: 20px;
+    color: #DC8E0E;
+    background-image: url(../imagenes/orange_bullet.gif);
+    background-repeat: repeat-y;
+    box-shadow: 5px #F9FC8D;
+  }
+
+  menu ul li a.seleccionado{
+    background-color: grey;
+    font-weight: bold;
+    color: white;
+  }
+
   #pie {
     /*#pie: ancho 100%, clear: both*/
-    width: 100%;
+    width: 900px;
     clear: both;
+    border-top: blue;
+    border-bottom: blue;
+    background-color: #fdf4b5;
   }
 
   #identificador {
@@ -63,6 +101,8 @@ div {
     float: left;
     width: 245px;
     margin-right: 5px;
+    background-image: url(../imagenes/flateral.gif);
+    background-repeat: repeat;
   }
 
   #principal {
@@ -70,6 +110,8 @@ div {
     float: left;
     width: 400px;
     clear: both;
+    background-image: url(../imagenes/fprincipal.jpg);
+    background-repeat: repeat;
   }
 
   #lateralderecho {
@@ -77,4 +119,51 @@ div {
     float: right;
     width: 245px;
     margin-left: 5px;
+  }
+
+  .articulo {
+    padding: 20px;
+    background-image: url(../imagenes/farticulo.jpg);
+  }
+
+  .articulo h2 {
+    background-image: url(../imagenes/farticulo.jpg);
+    color: #600;
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .articulo img{
+    float: left;
+    margin: 5px;
+  }
+
+  #noticias {
+    background-image: url(../imagenes/fnoticias.gif);
+    background-repeat: no-repeat;
+    padding: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+  }
+
+  #enlaces {
+    background-repeat: no-repeat;
+    padding: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+  }
+
+  #publicidad {
+    background-repeat: no-repeat;
+    padding: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+  }
+
+  h3{
+    font-size: 150%;
+    font-weight: bold;
+    background-image: url(../imagenes/ftitulos.gif);
+    padding: 10px;
   }
